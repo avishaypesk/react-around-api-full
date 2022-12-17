@@ -1,0 +1,18 @@
+.form__edit-profile {
+  height: 100%;
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .form__edit-profile {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form__edit-profile {
+    width: 238px;
+  }
+}

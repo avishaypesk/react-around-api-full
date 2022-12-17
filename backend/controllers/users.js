@@ -16,6 +16,7 @@ const { JWT_SECRET, NODE_ENV } = process.env;
 const login = (req, res) => {
   const { email, password } = req.body;
   User.findOne({ email })
+    .select('+password')
     .orFail(() => {
       throw new AuthorizationError('Incorrect email or password.');
     })
@@ -73,6 +74,10 @@ const getUser = (req, res) => {
           .send({ message: 'An error has occurred on the server' });
       }
     });
+};
+
+const getCurrentUser = (req, res) => {
+  res.send(req.user);
 };
 
 const createUser = (req, res) => {
@@ -150,6 +155,7 @@ module.exports = {
   getUsers,
   getUser,
   createUser,
+  getCurrentUser,
   updateUserAvatar,
   updateUser,
   login,

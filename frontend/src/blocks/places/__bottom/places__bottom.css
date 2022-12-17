@@ -1,0 +1,8 @@
+.places__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,9 @@
+.preview__window {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50vw;
+  max-height: 90vh;
+  margin: auto;
+}

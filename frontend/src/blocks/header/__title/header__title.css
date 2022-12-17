@@ -1,0 +1,12 @@
+.header__title {
+  max-width: 173px;
+  margin: 0 0 41px;
+}
+
+@media screen and (max-width: 320px) {
+  .header__title {
+    max-width: 126px;
+    margin-left: 27px;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,10 @@
+.places__title {
+  margin: 25px 0 32px 12px;
+  max-width: 215px;
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
