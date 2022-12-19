@@ -1,0 +1,15 @@
+.form-page__input {
+    all: unset;
+    border-bottom: 2px solid #ccc;
+    min-height: 27px;
+    line-height: 1.21;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .form-page__input {
+      margin-bottom: 25px;
+    }
+  }

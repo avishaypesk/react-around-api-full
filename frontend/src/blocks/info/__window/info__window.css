@@ -1,0 +1,15 @@
+.info__window {
+    min-height: 330px;
+    max-width: 430px;
+    background-color: white;
+    color: white;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding: 34px 36px;
+    border: none;
+    box-sizing: border-box;
+}

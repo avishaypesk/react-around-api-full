@@ -1,5 +1,5 @@
 import PopupWithForm from "./PopupWithForm";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function AddPlacePopup({ isOpen, onClose, onAddPlaceSubmit, buttonText }) {
   const [cardName, setCardName] = React.useState("");
@@ -10,8 +10,12 @@ export default function AddPlacePopup({ isOpen, onClose, onAddPlaceSubmit, butto
     onAddPlaceSubmit({ name: cardName, link: cardLink });
   };
 
-  const handleCardNameChange = (event) => setCardName(event.target.value);
+  useEffect(() => {
+    setCardName('');
+    setCardLink('');
+  }, [isOpen]);
 
+  const handleCardNameChange = (event) => setCardName(event.target.value);
   const handleCardLinkChange = (event) => setCardLink(event.target.value);
 
   return (

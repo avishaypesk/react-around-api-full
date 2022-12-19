@@ -9,7 +9,7 @@ export default function Main(props) {
   return (
     <main>
       <section className="profile">
-        <div className="profile__avatar" style={{ backgroundImage: `url(${currentUser.avatar})` }}>
+        <div className="profile__avatar" style={currentUser.avatar ? { backgroundImage: `url(${currentUser.avatar})` } : null}>
           <div className="profile__avatar-overlay">
             <img
               src={pencil}
@@ -21,14 +21,14 @@ export default function Main(props) {
         </div>
         <div className="profile__profile-info">
           <div className="profile__name-wrapper">
-            <h1 className="profile__name">{currentUser.name}</h1>
+            <h1 className="profile__name">{currentUser.name || "Jacques Cousteau"}</h1>
             <button
               type="button"
               className="button profile__edit-button"
               onClick={props.onEditProfileClick}
             ></button>
           </div>
-          <p className="profile__title">{currentUser.about}</p>
+          <p className="profile__title">{currentUser.about || 'Explorer'}</p>
         </div>
         <button
           type="button"

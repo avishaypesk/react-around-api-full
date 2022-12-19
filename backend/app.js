@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 
@@ -21,16 +22,15 @@ const cardRouter = require('./routes/cards');
 
 const centralerrhandler = require('./middleware/centralerrhandler');
 
+const { errorLogger, requestLogger } = require('./middleware/logger');
+
+app.use(cors());
+app.options('*', cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use((req, res, next) => {
-  req.user = {
-    _id: '632daf867955a330642600c2',
-  };
-
-  next();
-});
+app.use(requestLogger);
+app.use(errorLogger);
 
 app.use('/', userRouter);
 app.use('/', cardRouter);

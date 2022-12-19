@@ -77,7 +77,25 @@ const getUser = (req, res) => {
 };
 
 const getCurrentUser = (req, res) => {
-  res.send(req.user);
+  User.findById(req.user._id)
+    .orFail(() => {
+      throw new NotFoundError('User id not found.');
+    })
+    .then((user) => {
+      res.send(user);
+    })
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        const error = new ValidationError('Invalid user id received.');
+        res.status(BAD_REQUEST).send({ message: error.message });
+      } else if (err instanceof NotFoundError) {
+        res.status(NOT_FOUND).send({ message: err.message });
+      } else {
+        res
+          .status(INTERNAL_SERVER)
+          .send({ message: 'An error has occurred on the server' });
+      }
+    });
 };
 
 const createUser = (req, res) => {

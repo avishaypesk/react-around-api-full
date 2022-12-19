@@ -1,0 +1,12 @@
+.form-page__info {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    transition: opacity ease 0.5s;
+    padding-bottom: 80px;
+  }
+  
+  .form-page__info:hover {
+    opacity: 60%;
+  }

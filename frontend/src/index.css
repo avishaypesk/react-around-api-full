@@ -5,6 +5,9 @@
 @import url(./blocks/page/page.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__email/header__email.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__wrapper/header__wrapper.css);
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__title/form__title.css);
 @import url(./blocks/form/__save-button/form__save-button.css);
@@ -12,10 +15,22 @@
 @import url(./blocks/form/__profile/form__profile.css);
 @import url(./blocks/form/__new-card/form__new-card.css);
 @import url(./blocks/form/__container/form__container.css);
+@import url(./blocks/form/__container/_type/form__container_type_profile-avatar.css);
 @import url(./blocks/form/__input-error/form__input-error.css);
 @import url(./blocks/form/__input-error/_visible/form__input-error_visible.css);
 @import url(./blocks/form/__input/_type/form__input_type_error.css);
+@import url(./blocks/form/__input/_type/form__input_type_avatar-url.css);
 @import url(./blocks/form/__input/error_active/form__input-error_active.css);
+@import url(./blocks/form/__profile-avatar/form__profile-avatar.css);
+@import url(./blocks/form-page/form-page.css);
+@import url(./blocks/form-page/__container/form-page__container.css);
+@import url(./blocks/form-page/__error/form-page__error.css);
+@import url(./blocks/form-page/__error/_visible/form-page__error_visible.css);
+@import url(./blocks/form-page/__form/form-page__form.css);
+@import url(./blocks/form-page/__info/form-page__info.css);
+@import url(./blocks/form-page/__input/form-page__input.css);
+@import url(./blocks/form-page/__submit-button/form-page__submit-button.css);
+@import url(./blocks/form-page/__title/form-page__title.css);
 @import url(./blocks/button/button.css);
 @import url(./blocks/button/_disabled/button_disabled.css);
 @import url(./blocks/profile/profile.css);
@@ -28,6 +43,9 @@
 @import url(./blocks/profile/__add-button/profile__add-button.css);
 @import url(./blocks/profile/__avatar-overlay/profile__avatar-overlay.css);
 @import url(./blocks/profile/__avatar-icon/profile__avatar-icon.css);
+@import url(./blocks/info/__auth-image/info__auth-image.css);
+@import url(./blocks/info/__text/info__text.css);
+@import url(./blocks/info/__window/info__window.css);
 @import url(./blocks/places/places.css);
 @import url(./blocks/places/__card/places__card.css);
 @import url(./blocks/places/__image/places__image.css);
@@ -47,3 +65,4 @@
 @import url(./blocks/preview/__window/preview__window.css);
 @import url(./blocks/preview/__preview-image/preview__preview-image.css);
 @import url(./blocks/preview/__description/preview__description.css);
+@import url(./blocks/user-details/user-details.css);
