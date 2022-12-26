@@ -1,6 +1,6 @@
 const { INTERNAL_SERVER } = require('../utils/errorcodes');
 
-module.exports = (err, req, res) => {
+module.exports = (err, req, res, next) => {
   console.log('caught by central err handler\n', err);
 
   const { statusCode = INTERNAL_SERVER, message } = err;
