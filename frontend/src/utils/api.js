@@ -38,8 +38,11 @@ class Api {
   };
 }
 
-const api = new Api(
-  "b21895f7-79d1-4177-9817-d22cf233df9c",
-  "https://around.nomoreparties.co/v1/group-12/"
-);
+
+const jwt = localStorage.getItem('jwt');
+const api = new Api(jwt, 'https://api.avishaypeskaround.students.nomoredomainssbs.ru');
+// const api = new Api(
+//   "b21895f7-79d1-4177-9817-d22cf233df9c",
+//   "https://around.nomoreparties.co/v1/group-12/"
+// );
 export default api;

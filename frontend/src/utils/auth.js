@@ -1,4 +1,4 @@
-const BASE_URL = 'https://register.nomoreparties.co';
+const BASE_URL = 'https://avishaypeskaround.students.nomoredomainssbs.ru';
 
 const handleResponse = (res) => (res.ok ? res.json() : Promise.reject(`Error: ${res.status}`));
 
