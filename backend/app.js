@@ -29,6 +29,8 @@ app.options('*', cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+require('dotenv').config();
+
 app.use(requestLogger);
 app.use(errorLogger);
 
