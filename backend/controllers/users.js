@@ -12,7 +12,6 @@ const {
 } = require('../utils/errorcodes');
 require('dotenv').config();
 
-
 const { JWT_SECRET, NODE_ENV } = process.env;
 
 const login = (req, res) => {

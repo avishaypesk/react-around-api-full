@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/avishaypesk/around-express#readme",
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.1",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
@@ -35,7 +35,6 @@
     "helmet": "^6.0.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.6.1",
-    "react-router-dom": "^5.3.4",
     "validator": "^13.7.0",
     "winston": "^3.8.2"
   },
