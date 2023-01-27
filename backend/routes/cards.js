@@ -13,7 +13,7 @@ const createCardSchema = celebrate({
 });
 
 const cardIdSchema = celebrate({
-  params: Joi.object().keys({ cardId: Joi.string().min(24).max(24).required() }),
+  params: Joi.object().keys({ cardId: Joi.hex().min(24).max(24).required() }),
 });
 
 const {

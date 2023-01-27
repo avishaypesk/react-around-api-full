@@ -24,7 +24,7 @@ const loginSchema = celebrate({
 
 const getUserSchema = celebrate({
   params: Joi.object().keys({
-    id: Joi.string().min(24).max(24).required(),
+    id: Joi.hex().min(24).max(24).required(),
   }),
 });
 
